@@ -1,0 +1,28 @@
+body {
+   background-image: url("../images/retina_wood.png");
+   
+}
+
+.paw {
+    height: 100px;
+    width: auto;
+}
+
+.middle {
+    align-content: center;
+    position: relative;
+    left: 10px;
+    margin: 20px;
+    padding: 10px;
+}
+
+.card-header {
+    background-color: #92c3eb;
+    color: #ffffd3;
+}
+
+.jumbotron {
+    color: #ffffd3;
+    background-color: #92c3eb;
+    font-size: 200%;
+}

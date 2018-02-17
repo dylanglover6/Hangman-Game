@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    
+    <title>Guess A Dog Breed!</title>
+  </head>
+  <body onload="startUp()" />
+<div class="container">
+  
+  <div class="row">
+    <div class="col-sm-12">
+    <div class="jumbotron" class="main">
+        <h1 class="display-4">Guess a Dog Breed!</h1>
+        <h3>Press Any Key to Get Started!</h3>
+        <hr class="my-4">
+        <p id="answer"></p>
+    </div>
+    </div>
+  </div>
+
+  <div class="row ">
+  
+    <div class="col-sm-5 card middle" style="width: 18rem;">
+        <div class="card-header">
+          Past Guesses:
+        </div>
+        <div class="card-body">
+          <p id="guesses"></p>
+        </div>
+    </div>
+    
+    
+    <div class="col-sm-1"></div>
+    
+    <div class="col-sm-5 card middle" style="width: 18rem;">
+        <div class="card-header">
+          Wins:
+        </div>
+        <ul class="list-group list-group-flush">
+          <p id="wins"></p>
+        </ul>
+        <div class="card-header">
+          Losses:
+        </div>
+        <ul class="list-group list-group-flush">
+          <p id="losses"></p>
+        </ul>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="card col-sm-12">
+      <div class="card-header">
+        Remaining Guesses:
+      </div>
+      <div class="card-body">
+      <img class="paw" id="paw1" src="assets/images/paw.png" alt="dog paw">
+      <img class="paw" id="paw2" src="assets/images/paw.png" alt="dog paw">
+      <img class="paw" id="paw3" src="assets/images/paw.png" alt="dog paw">
+      <img class="paw" id="paw4" src="assets/images/paw.png" alt="dog paw">
+      <img class="paw" id="paw5" src="assets/images/paw.png" alt="dog paw">
+      <img class="paw" id="paw6" src="assets/images/paw.png" alt="dog paw">
+      <img class="paw" id="paw7" src="assets/images/paw.png" alt="dog paw">
+      <img class="paw" id="paw8" src="assets/images/paw.png" alt="dog paw">
+      <img class="paw" id="paw9" src="assets/images/paw.png" alt="dog paw">
+      <img class="paw" id="paw10"src="assets/images/paw.png" alt="dog paw">
+      </div>
+    </div>
+  </div>
+   
+  
+  
+</div>
+    
+    <script src="./assets/javascript/game.js"></script>
+  </body>
+</html>
