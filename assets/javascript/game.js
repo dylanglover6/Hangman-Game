@@ -22,8 +22,20 @@ function startUp()
     
     s = answerArray.join(" ");
     document.getElementById ("answer").innerHTML = s;
-    
 };
+//reset game
+function resetGame()
+    {
+        startUp();
+        count=0;
+        document.getElementById("guesses").innerHTML = "";
+        var freshPaws = document.getElementsByClassName("paw");
+        for (var i = 0; i < freshPaws.length; i++)
+        {
+            freshPaws[i].style.opacity = 1;   
+        };
+    };
+
 //function to convert user's keystroke to guess
 document.onkeyup = function(event) {
     var userGuess = event.key;
@@ -52,29 +64,14 @@ document.onkeyup = function(event) {
             //newWord();
             winCounter++;
             //winCounter only goes up after you start next game
-            count=0;
-            startUp();
-            document.getElementById("guesses").innerHTML = "";
-            
-            var freshPaws = document.getElementsByClassName("paw");
-                for (var i = 0; i < freshPaws.length; i++)
-                {
-                    freshPaws[i].style.opacity = 1;   
-                };
+            resetGame();
         };
     
     //loss function
     if (count === 10)
         {
             lossCounter++;
-            startUp();
-            count=0;
-            document.getElementById("guesses").innerHTML = "";
-            var freshPaws = document.getElementsByClassName("paw");
-            for (var i = 0; i < freshPaws.length; i++)
-            {
-                freshPaws[i].style.opacity = 1;   
-            };
+            resetGame();
         }   
 
 
